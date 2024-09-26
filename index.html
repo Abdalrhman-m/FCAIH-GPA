@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FCAIH GPA Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>FCAIH GPA Calculator</h1>
+    <div class="input-area">
+      <div class="previous-gpa">
+        <label for="prev-gpa">Previous GPA</label>
+        <input type="number" id="prev-gpa" value="0">
+      </div>
+      <div class="previous-hours">
+        <label for="prev-hours">Previous Completed Hours</label>
+        <input type="number" id="prev-hours" value="0">
+      </div>
+    </div>
+    <div class="results">
+      <p>Current Term GPA: <span id="term-gpa">0.00</span></p>
+      <p>Cumulative GPA: <span id="cumulative-gpa">0.00</span></p>
+      <p>Total Hours: <span id="total-hours">0</span></p>
+    </div>
+    <div class="subjects-container" id="subjects-container">
+    </div>
+    <button id="add-subject">Add Subject</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
