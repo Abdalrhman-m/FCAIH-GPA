@@ -17,7 +17,7 @@ body {
   }
   
   h1 {
-    color: #4169E1;
+    color: #C1E1C1;
     text-align: center;
     font-size: 2em;
     margin-bottom: 20px;
@@ -82,7 +82,7 @@ body {
   }
   
   .subject label {
-    margin-right: 30px;
+    margin-right: 10px;
     color: #ffffff;
   }
   
@@ -100,7 +100,7 @@ body {
     color: #fff;
     border: none;
     border-radius: 5px;
-    padding: 2.5px 5px;
+    padding: 5px 10px;
     cursor: pointer;
   }
   
@@ -138,17 +138,33 @@ body {
     .previous-gpa, .previous-hours {
       margin-bottom: 20px;
     }
+    .subjects-container {
+        width: 60%;
+        margin: 20px auto;
+        
+    }
     .subject {
       flex-direction: column;
       align-items: center;
+      margin-bottom: 15px;
+      padding: 8px;
     }
     .subject label {
-      margin-bottom: 10px;
+      margin-bottom: 5px;
     }
     .subject select, .subject input {
-      width: 100%;
-      margin-bottom: 10px;
+      width: 90%;
+      margin-bottom: 20px;
+
     }
+    .remove-subject {
+        background-color: #e74c3c;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        padding: 2px 5px;
+        cursor: pointer;
+      }
   }
   
   @media (max-width: 480px) {
@@ -165,14 +181,48 @@ body {
     .previous-gpa, .previous-hours {
       margin-bottom: 10px;
     }
+    .subjects-container {
+        width: 60%;
+        margin: 20px auto;    }
     .subject {
-      margin-bottom: 5px;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 6px;
     }
     .subject label {
+      margin-bottom:  5px;
+    }
+    .subject select, .subject input {
+      width: 80%;
+      margin-bottom: 5px;
+    }
+    .remove-subject {
+        background-color: #e74c3c;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        padding: 2px 5px;
+        cursor: pointer;
+      }
+  }
+  
+  @media (max-width: 320px) {
+    .subjects-container {
+        width: 60%;
+        margin: 20px auto;    }
+    .subject {
+      padding: 4px;
+      margin-bottom: 25px;
+    }
+    .subject label {
+      font-size: 0.8em;
       margin-bottom: 5px;
     }
     .subject select, .subject input {
       width: 100%;
+      padding: 2px;
+      font-size: 0.8em;
       margin-bottom: 5px;
     }
   }
